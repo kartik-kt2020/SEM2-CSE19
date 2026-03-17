@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="exp6.css">
 </head>
 <body>
+     <script src="exp6.js" defer></script>
     <div class="container">
         <h2 id="mainHeading">Welcome To JAVA SCRIPT</h2>
         <input type="text" id="userinput" placeholder="Enter heading ">
         <br><br>
-        
+        <button onclick="changeHeading()">Change Heading</button>
+        <button onclick="resetHeading()">Reset Heading</button>
+        <button onclick="changeBackground()">Change Background</button>
+        <button onclick="resetBackground()">Reset Background</button>
+        <button onclick="increaseFont()">Increase Font</button>
+        <button onclick="showHideParagraph()">Show/Hide Paragraph</button>
+        <p id="demoParagraph">This is a simple paragraph to demonstrate functionality of this page.</p>
+       
     </div>
 </body>
 </html>

@@ -4,4 +4,25 @@ div{
     height: 250px;
     text-align: center;
     margin: 20px auto;
+    
+}
+#but1{
+    background-color: red;
+}
+#but2{
+    background-color: yellow;
+}
+#but3{
+    background-color: green;
+}
+#but4{
+    background-color: blue;
+}#but5{
+    background-color: aqua;
+}
+#but6{
+    background-color: rgb(255, 0, 187);
+}
+#but7{
+    background-color: gray;
 }

@@ -2,14 +2,17 @@ let mainHeading = document.getElementById("mainHeading");
 let userinput = document.getElementById("userinput");
 let demoParagraph = document.getElementById("demoParagraph");
 function changeBackground() {
-    document.body.style.backgroundColor = "red";
-     document.body.style.backgroundColor = "green";
+    const colors = ["red", "blue", "green", "yellow", "pink"];
+    let random = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = random;
 }
 function resetBackground() {
     document.body.style.backgroundColor = "white";
 }
 function increaseFont() {
-    demoParagraph.style.fontSize = "20px";
+    let currentSize = window.getComputedStyle(demoParagraph).fontSize;
+    let newSize = parseInt(currentSize) + 2; // increase by 2px
+    demoParagraph.style.fontSize = newSize + "px";
 }
 function showHideParagraph() {
     if (demoParagraph.style.display === "none") {

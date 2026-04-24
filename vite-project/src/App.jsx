@@ -1,18 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import reactlogo from './assets/react.svg'
 import './App.css'
+import Card from './components/card'
+import './components/card.css'
+import './components/card.jsx'
+import CounterApp from './components/CounterApp.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="main">
-      <h1>Student record</h1>
-    <h3> Student name:kartik</h3>
-    <h3> Student roll no: 123</h3>
+    <>
+    <div>
+     <CounterApp/>
     </div>
+</>
   )
 }
 
